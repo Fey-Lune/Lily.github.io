@@ -136,6 +136,11 @@ a:hover {
     color: #0b51ba;
 }
 
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     nav#header {

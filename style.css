@@ -161,4 +161,10 @@ html {
         width: 100%;
         margin-bottom: 20px;
     }
+
+    .icon {
+        height: 30px; /* Reduce size further for mobile */
+        width: 30px;
+    }
+    
 }

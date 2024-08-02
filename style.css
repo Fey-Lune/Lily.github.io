@@ -138,9 +138,9 @@ a:hover {
 }
 
 .svg {
-    max-width: 100%;  /* Scale SVG to fit the container */
+    max-width: 90%;  /* Scale SVG to fit the container */
     height: auto;     /* Maintain aspect ratio */
-    width: 400px;     /* Specific width for the SVG */
+    width: 300px;     /* Specific width for the SVG */
 }
 
 /* Smooth scrolling */

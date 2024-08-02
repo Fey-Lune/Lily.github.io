@@ -137,6 +137,12 @@ a:hover {
     color: #0b51ba;
 }
 
+.diagram-svg {
+    max-width: 100%;  /* Scale SVG to fit the container */
+    height: auto;     /* Maintain aspect ratio */
+    width: 400px;     /* Specific width for the SVG */
+}
+
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;

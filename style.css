@@ -137,12 +137,6 @@ a:hover {
     color: #0b51ba;
 }
 
-drawio.svg {
-    max-width: 50%;  /* Scale SVG to fit the container */
-    height: auto;     /* Maintain aspect ratio */
-    width: 300px;     /* Specific width for the SVG */
-}
-
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;

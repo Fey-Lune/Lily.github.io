@@ -83,7 +83,7 @@ ul.menu {
 }
 
 .menu__item a:hover {
-    color: #E6B9A6;
+    color: #C0B5B3;
     background-color: #ffffff; /* Changes background color on hover */
 }
 
@@ -129,12 +129,12 @@ ul.menu {
 /* Links */
 a {
     text-decoration: none;
-    color: #E6B9A6;
+    color: #C0B5B3;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0b51ba;
+    color: #490206;
 }
 
 /* Smooth scrolling */

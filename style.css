@@ -175,7 +175,8 @@ html {
   cursor: pointer;
   display: inline-block;
   background-color: #fff; /* White background for the container */
-  overflow: hidden; /* Prevents overflow of zoomed content */
+  z-index: 999;
+  /*overflow: hidden; /* Prevents overflow of zoomed content */*/
   padding: 10px; /* Optional padding */
 }
 

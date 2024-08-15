@@ -189,9 +189,19 @@ html {
 /* Zoomed-in effect */
 .zoomable-container.zoomed {
   position: fixed; /* Fixed position for zoomed state */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2); /* Center and zoom */
-  z-index: 1000; /* Ensure it is above the overlay */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: #fff; /* Ensure the white background is kept */
+  display: flex;
+  align-items: center; /* Center image vertically */
+  justify-content: center; /* Center image horizontally */
 }
 
+.zoomable-container.zoomed img {
+  transform: scale(2); /* Adjust scale as needed */
+  max-width: none; /* Allow image to exceed container width */
+  max-height: none; /* Allow image to exceed container height */
+}

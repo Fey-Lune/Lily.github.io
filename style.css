@@ -195,6 +195,3 @@ html {
   z-index: 1000; /* Ensure it is above the overlay */
 }
 
-.zoomable-container.zoomed::before {
-  opacity: 1; /* Show the darkened background when zoomed */
-}

@@ -169,15 +169,19 @@ html {
     
 }
 
-/* Zoom the images */
+/* Zoomable container setup */
 .zoomable-container {
   position: relative;
   cursor: pointer;
   display: inline-block;
+  background-color: #fff; /* White background for the container */
+  padding: 20px; /* Optional padding for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for visual separation */
 }
 
 /* Initial image style */
 .zoomable-container img {
+  display: block; /* Remove extra space below the image */
   max-width: 100%;
   transition: transform 0.3s ease;
 }
@@ -197,8 +201,12 @@ html {
 }
 
 /* Zoomed-in effect */
-.zoomable-container.zoomed img {
-  transform: scale(2); /* Adjust scale as needed */
+.zoomable-container.zoomed {
+  position: fixed; /* Fixed position for zoomed state */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2); /* Center and zoom */
+  z-index: 1000; /* Ensure it is above the overlay */
 }
 
 .zoomable-container.zoomed::before {

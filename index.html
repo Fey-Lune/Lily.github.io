@@ -112,7 +112,10 @@
 		</section>
 		<script>
         		function toggleZoom(element) {
-            		element.classList.toggle('zoomed');
+            			const container = element.closest('.zoomable-container');
+            			if (container) {
+                			container.classList.toggle('zoomed');
+            				}
         		}
     		</script>
 </body>

@@ -186,20 +186,6 @@ html {
   transition: transform 0.3s ease;
 }
 
-/* Darkened background overlay */
-.zoomable-container::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Darkened background */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 999; /* Ensure it appears above other content */
-}
-
 /* Zoomed-in effect */
 .zoomable-container.zoomed {
   position: fixed; /* Fixed position for zoomed state */

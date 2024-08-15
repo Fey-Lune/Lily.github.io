@@ -187,7 +187,7 @@ html {
 }
 
 /* Zoomed-in effect */
-.zoomable-container.zoom {
+.zoomable-container.zoomed {
   position: fixed; /* Fixes the position to viewport */
   top: 0;
   left: 0;
@@ -200,7 +200,7 @@ html {
   justify-content: center; /* Center image horizontally */
 }
 
-.zoomable-container.zoom img {
+.zoomable-container.zoomed img {
   transform: scale(2); /* Adjust scale as needed */
   max-width: none; /* Allows image to exceed container width */
   max-height: none; /* Allows image to exceed container height */

@@ -93,7 +93,7 @@
 					</tr>
 				</table>
 			<h3>Game map</h3>
-				<div class="ZoomImage" onclick="toggleZoom(this)">
+				<div class="zoomable-container" onclick="toggleZoom(this)">
 					<img src="map.drawio.svg" alt="Map of the game" width="500">
 				</div>
 			<h3>Dependencies</h3>
@@ -103,7 +103,7 @@
 		<section class="js-section" id="design">
 			<h2>Design</h2>
 			<h3>Domain Model</h3>
-				<div class="ZoomImage" onclick="toggleZoom(this)">
+				<div class="zoomable-container" onclick="toggleZoom(this)">
 					<img src="DomainModel.png" alt="Domain Model" width="500">
 				</div>
 			<h3>System Sequence Diagram</h3>
@@ -111,7 +111,9 @@
 			<h3>Design class model</h3>
 		</section>
 		<script>
-    			function toggleZoom(element) {element.classList.toggle('zoom');}
+    			function toggleZoom(element) 
+			{const container = element.closest(.zoomable-container');
+			container.classList.toggle('zoomed');}
   		</script>
 </body>
 </html>

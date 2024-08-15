@@ -93,10 +93,9 @@
 					</tr>
 				</table>
 			<h3>Game map</h3>
-				<img src="map.drawio.svg" alt="Map of the game" width="500">
-				<script>
-    					function toggleZoom(element) {element.classList.toggle('zoom');}
-  				</script>
+				<div class="Map" onclick="toggleZoom(this)">
+					<img src="map.drawio.svg" alt="Map of the game" width="500">
+				</div>
 			<h3>Dependencies</h3>
 			<h3>Installation and Setup guide</h3>
 		</section>
@@ -109,5 +108,8 @@
 			<h3>Internal Sequence Diagram</h3>
 			<h3>Design class model</h3>
 		</section>
+		<script>
+    			function toggleZoom(element) {element.classList.toggle('zoom');}
+  		</script>
 </body>
 </html>

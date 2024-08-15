@@ -180,7 +180,7 @@ html {
 /* Initial image style */
 .zoomable-container img {
   background-color: #fff; 
-  max-width: 100%;
+  max-width: 75%;
   transition: transform 0.3s ease;
 }
 

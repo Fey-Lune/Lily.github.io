@@ -168,3 +168,21 @@ html {
     }
     
 }
+
+/* Container for the image */
+.img-container {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Initial image style */
+.img-container img {
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Zoomed-in style */
+.img-container.zoom img {
+  transform: scale(2); /* Adjust scale as needed */
+}

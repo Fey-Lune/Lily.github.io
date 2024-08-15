@@ -173,11 +173,9 @@ html {
 .zoomable-container {
   position: relative;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
   background-color: #fff; /* White background for the container */
   z-index: 999;
-  /*overflow: hidden; /* Prevents overflow of zoomed content */*/
-  padding: 10px; /* Optional padding */
 }
 
 /* Initial image style */
